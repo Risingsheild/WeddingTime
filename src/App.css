@@ -1,8 +1,12 @@
 /* src/App.css */
 .App {
-  font-family: Arial, sans-serif;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 40px;
 }
-
+ 
+body {
+  background-color: rgba(158, 157, 156, 0.705);
+}
 nav ul {
   list-style-type: none;
   padding: 0;

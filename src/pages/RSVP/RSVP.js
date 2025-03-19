@@ -1,5 +1,6 @@
 // src/pages/RSVP.js
 import React, { useState } from 'react';
+import './rsvp.css'
 
 function RSVP() {
   const [formData, setFormData] = useState({
@@ -81,8 +82,8 @@ function RSVP() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <div className="mb-4">
+    <form onSubmit={handleSubmit} className='form'>
+      <div className="details">
         <input
           type="text"
           name="name"
@@ -95,7 +96,7 @@ function RSVP() {
         {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
       </div>
 
-      <div className="mb-4">
+      <div className="details">
         <input
           type="email"
           name="email"
@@ -108,7 +109,7 @@ function RSVP() {
         {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
       </div>
 
-      <div className="mb-4">
+      <div className="details">
         <select
           name="foodOption"
           value={formData.foodOption}
@@ -124,7 +125,7 @@ function RSVP() {
         {errors.foodOption && <p className="text-red-500 text-sm">{errors.foodOption}</p>}
       </div>
 
-      <div className="mb-4">
+      <div className="details">
         <input
           type="text"
           name="plusOneName"
@@ -137,7 +138,7 @@ function RSVP() {
 
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+        className="submit"
         disabled={loading}
       >
         {loading ? "Submitting..." : "Submit RSVP"}

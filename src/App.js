@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 // Importing Components
 import './App.css';
 import Home from './pages/Home';
-import RSVP from './pages/RSVP';
+import RSVP from './pages/RSVP/RSVP';
 import Gallery from './pages/Gallery';
 import EventSchedule from './pages/EventSchedule';
 import Map from './pages/Map';

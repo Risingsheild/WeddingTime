@@ -39,6 +39,9 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-jest": "^28.11.0",
     "json-server": "^1.0.0-beta.3"
   }
 }
